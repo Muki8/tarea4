@@ -1,23 +1,11 @@
 package clases;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author el_mi
- */
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-
 
 public class usuariosget {
 
@@ -29,10 +17,73 @@ public class usuariosget {
     private String correo_electronico;
     private String contraseña;
 
-    // ... (getters y setters, que ya has definido en tu código)
+    // Constructor (puedes agregarlo si lo necesitas)
+
+    // Getters y Setters
+    public int getIdusuario() {
+        return idusuario;
+    }
+
+    public void setIdusuario(int idusuario) {
+        this.idusuario = idusuario;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getCorreo_electronico() {
+        return correo_electronico;
+    }
+
+    public void setCorreo_electronico(String correo_electronico) {
+        this.correo_electronico = correo_electronico;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
 
     // Método para guardar un nuevo usuario en la base de datos
     public void guardarUsuario() throws SQLException {
+        // Asegúrate de que las propiedades hayan sido inicializadas antes de guardar el usuario
+        if (nombre == null || apellido == null || usuario == null || correo_electronico == null || telefono == null || contraseña == null) {
+            System.out.println("Error: Faltan datos del usuario para guardar en la base de datos.");
+            return;
+        }
+
         String query = "INSERT INTO form (nombre, apellido, usuario, correo, telefono, contrasena) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection connection = ConexionMySQL.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
@@ -48,6 +99,12 @@ public class usuariosget {
 
     // Método para actualizar un usuario existente en la base de datos
     public void actualizarUsuario() throws SQLException {
+        // Asegúrate de que las propiedades hayan sido inicializadas antes de actualizar el usuario
+        if (nombre == null || apellido == null || usuario == null || correo_electronico == null || telefono == null || contraseña == null) {
+            System.out.println("Error: Faltan datos del usuario para actualizar en la base de datos.");
+            return;
+        }
+
         String query = "UPDATE form SET nombre = ?, apellido = ?, correo = ?, telefono = ?, contrasena = ? WHERE idusuario = ?";
         try (Connection connection = ConexionMySQL.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
@@ -63,6 +120,12 @@ public class usuariosget {
 
     // Método para eliminar un usuario de la base de datos
     public void eliminarUsuario() throws SQLException {
+        // Asegúrate de que la propiedad idusuario haya sido inicializada antes de eliminar el usuario
+        if (idusuario == 0) {
+            System.out.println("Error: El ID del usuario no ha sido especificado para eliminar de la base de datos.");
+            return;
+        }
+
         String query = "DELETE FROM form WHERE idusuario = ?";
         try (Connection connection = ConexionMySQL.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
@@ -92,58 +155,4 @@ public class usuariosget {
         }
         return usuarios;
     }
-
-    public void setContraseña(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setTelefono(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setUsuario(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setApellido(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    void setIdusuario(int aInt) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setNombre(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setCorreo_electronico(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getContraseña() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getTelefono() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getCorreo_electronico() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getUsuario() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getApellido() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
-
-
