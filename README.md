@@ -33,6 +33,7 @@ automáticamente en la pantalla principal.
 
 Extra
 tarea
-Saludos profesor pero querias decirle que no pude completar la tarea #4, la base de datos de me complico
+Saludos profesor pero queria decirle que no pude completar la tarea #4, la base de datos se me complico
 ya que por alguna razon los puertos no se conectaban y averiguar como quitarlos me tomo todo el tiempo,
 se que no es una excusa pero tuve muchos problemas con esta situacion.
+por alguna razon el JDBC no se conecta. quisiera saber si podrias haber mas tiempo de entregar esta tarea.
