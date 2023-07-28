@@ -400,6 +400,4 @@ public class principal extends javax.swing.JFrame {
     private java.awt.MenuBar menuBar5;
     // End of variables declaration//GEN-END:variables
 
-    
-
 }
