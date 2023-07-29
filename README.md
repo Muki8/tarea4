@@ -2,13 +2,17 @@
 
 Jesus edwardo martinez rodriguez
 2021-0693.
+link de los videos estaran en mi drive.
+tuve que hacer dos ya que mi Pc portatil tiene la camara frontal y el microfono erroneo tuve que hacerlo de este modo.
 
 
 Extra
-
+tecnicamente tengo todo realizado pero se necesita de la base de datos para que se cumplan varias funcionalidades.
+mas abajo se explica el porque no pude acceder a la base de datos. 
 Saludos profesor pero queria decirle que no pude completar la tarea #4, la base de datos se me complico
 ya que por alguna razon los puertos no se conectaban y averiguar como quitarlos me tomo todo el tiempo,
-se que no es una excusa pero tuve muchos problemas con esta situacion.
+se que no es una excusa pero aun tengo muchos problemas con esta situacion.
+No se como solucionar este problema intente desactivando el antivirus pero aun persiste el error.
 por alguna razon el JDBC no se conecta. quisiera saber si podria haber mas tiempo de entregar esta tarea.
 
 
