@@ -7,6 +7,16 @@ Jesus edwardo martinez rodriguez
 link de los videos estaran en mi drive.  
 tuve que hacer dos ya que mi Pc portatil tiene la camara frontal y el microfono erroneo tuve que hacerlo de este modo.
 
+este video esta presentacion
+
+https://drive.google.com/file/d/11HiF090JcIaqAVQOljfQqda1Q3iXCmgX/view?usp=drive_link
+
+este video es la explicacion de lo que pude hacer.
+
+https://drive.google.com/file/d/11Il3aPF6LV-O0ww2dJOktr-PkAANrcy7/view?usp=drive_link
+
+
+
 
 
 Extra
