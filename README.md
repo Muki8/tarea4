@@ -1,5 +1,9 @@
 # tarea4
 
+Jesus edwardo martinez rodriguez
+2021-0693.
+
+
 Extra
 
 Saludos profesor pero queria decirle que no pude completar la tarea #4, la base de datos se me complico
