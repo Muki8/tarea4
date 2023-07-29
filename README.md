@@ -19,7 +19,10 @@ https://drive.google.com/file/d/11Il3aPF6LV-O0ww2dJOktr-PkAANrcy7/view?usp=drive
 
 
 
+el proyecto.jar, vendria siendo el ejecutable del programa en si.
+
 Extra
+
 tecnicamente tengo todo realizado pero se necesita de la base de datos para que se cumplan varias funcionalidades.
 mas abajo se explica el porque no pude acceder a la base de datos. 
 Saludos profesor pero queria decirle que no pude completar la tarea #4, la base de datos se me complico
