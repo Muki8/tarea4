@@ -1,9 +1,12 @@
 # tarea4
 
 Jesus edwardo martinez rodriguez
+
 2021-0693.
-link de los videos estaran en mi drive.
+
+link de los videos estaran en mi drive.  
 tuve que hacer dos ya que mi Pc portatil tiene la camara frontal y el microfono erroneo tuve que hacerlo de este modo.
+
 
 
 Extra
